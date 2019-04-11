@@ -1,12 +1,11 @@
-def my_select(array)
-  i = 0 
-  nuarray = []
-  if i % 2 
-    nuarray << yield(array[i])
-    i
-  else 
-    nuarray
-    end 
-    
-  array
-end
+def my_select(collection) 
+  empty_arr = [] 
+  
+  i=0 
+  while i < collection.length
+  empty_arr.push yield(collection[i]) 
+  i += 1 
+end 
+
+  empty_arr.compact 
+end 
