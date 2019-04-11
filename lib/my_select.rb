@@ -11,11 +11,13 @@ def my_select(array)
   select 
 end 
 
-def my_select(array)
+#def my_select(array)
 #  i = 0 
 #  nuarray = []
 #  while i < array.length 
+    **if (yield(array[i]))
 #    nuarray << yield(array[i])
+    **end
 #    i += 1 
 #    end 
 #  array
