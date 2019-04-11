@@ -1,12 +1,12 @@
 
 def my_select(array) 
   i =0 
-  select = [] 
+  nuarray = [] 
   while i < array.length 
     if (yield(array[i]))
-      select << array[i] 
+      nuarray << array[i] 
     end 
     i += 1 
   end 
-  select 
+  nuarray 
 end 
